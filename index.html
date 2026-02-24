@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Kamlesh A. Meshram | Personal Website</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --accent: #1d4ed8;
+    }
+    body.dark {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --accent: #38bdf8;
+    }
+
+    * { box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+    body { margin: 0; background: var(--bg); color: var(--text); }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--card);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      margin: 0 8px;
+      font-weight: 600;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 0 16px 40px;
+    }
+
+    section { margin-bottom: 40px; }
+    h1, h2 { color: var(--accent); margin-bottom: 10px; }
+
+    .hero {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    ul { padding-left: 18px; }
+    li { margin-bottom: 6px; }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      background: var(--card);
+      border-top: 1px solid #ddd;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Dr. Kamlesh A. Meshram</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+        <button class="btn" onclick="toggleTheme()">🌙 Toggle</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <h1>Dr. Kamlesh A. Meshram</h1>
+      <p><strong>Head, School of Computer Applications | Senior Assistant Professor</strong></p>
+      <p>Pimpri Chinchwad University, Pune</p>
+      <p>
+        Experienced academic leader with more than 17 years of professional engagement in higher education,
+        encompassing teaching, research, training, and academic administration. As Head of the School of Computer Applications,
+        I oversee strategic, academic, and operational functions, ensuring quality curriculum delivery,
+        faculty mentoring, and continuous student development.
+      </p>
+      <p>
+        <strong>Academic Interests:</strong> Mobile Computing, Software Engineering, Cloud Computing, DevOps Practices,
+        Artificial Intelligence & Machine Learning, HCI, OOAD, Java Programming.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Head, School of Computer Applications & Senior Assistant Professor</h3>
+          <p><strong>Pimpri Chinchwad University, Pune</strong> (Aug 2023 – Present)</p>
+          <ul>
+            <li>Leading academic, administrative, and operational functions.</li>
+            <li>Curriculum planning and continuous improvement.</li>
+            <li>Faculty mentoring and workload management.</li>
+            <li>Industry collaborations and skill-based programs.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Assistant Professor</h3>
+          <p><strong>JSPM’s Jayawant Institute of Management Studies, Pune</strong> (2009 – 2023)</p>
+          <ul>
+            <li>Teaching MCA Management courses.</li>
+            <li>Research publications and student project guidance.</li>
+            <li>Training & placement coordination.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software Developer (.NET)</h3>
+          <p><strong>CSSA Info Media Pvt. Ltd., Pune</strong> (2008 – 2009)</p>
+          <ul>
+            <li>Developed .NET applications.</li>
+            <li>Testing, debugging, documentation.</li>
+            <li>Team collaboration for timely delivery.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research & Profiles</h2>
+      <div class="card links">
+        <p><strong>Profiles:</strong></p>
+        <a href="https://scholar.google.com/citations?user=-SblYacAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=59470350100" target="_blank">Scopus</a>
+        <a href="https://orcid.org/0000-0002-9828-0498" target="_blank">ORCID</a>
+        <p><strong>Research Areas:</strong> M-Learning, Usability & UX, Cloud Computing, ICT in Education, AI & ML, Blockchain</p>
+        <p><strong>Publications Summary:</strong> 20 Papers (10 Journals, 10 Conferences)</p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <div class="card">
+        <ul>
+          <li>Prediction of Machining Conditions Using Machine Learning (IEEE Xplore, Scopus)</li>
+          <li>AI–Blockchain Convergence for Inclusive Fintech (Scopus Q4)</li>
+          <li>AI-Driven Financial Management for MSMEs (Scopus Q4)</li>
+          <li>AI in Education: Revolutionizing Learning Through Personalization</li>
+          <li>Usability Evaluation of M-Learning Apps – IJASRM</li>
+          <li>Usability Testing of Moodle in M-Learning – IJCSC</li>
+          <li>Impact of Mobile Learning on Learning Behavior – IETEC, Vietnam</li>
+          <li>Security Challenges in Cloud Computing – INCON</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Mobile:</strong> 9850228842</p>
+        <p><strong>Email:</strong> kamlesh.meshram2007@gmail.com | kamlesh.meshram@pcu.edu.in</p>
+        <p><strong>Location:</strong> Pune, Maharashtra</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Dr. Kamlesh A. Meshram | Personal Academic Website
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
